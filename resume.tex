@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Stephen J Boyer
+%
+% Original header:
+% Copyright (C) 2010 by Trey Hunner
+%
+% Copying and distribution of this file, with or without modification,
+% are permitted in any medium without royalty provided the copyright
+% notice and this notice are preserved. This file is offered as-is,
+% without any warranty.
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+%
+%	END PACKAGES
+%
+
+\name{Stephen Boyer} % Your name
+\address{(307) 871-0310 $|$ sboyer307@gmail.com $|$ www.stephenboyer.com $|$ www.linked-in.com/in/steve-boyer}
+%\address{505 Centennial Dr, Green River, WY 82935}
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Summary of Qualifications}
+\begin{rSection}{Skills \& Qualifications}
+\begin{rSubQualificationsSection}{Technical}   %{Programming}
+	\item Linux, Windows, MacOS
+	\item MySQL, PostgreSQL, MongoDB
+	\item Java, C++, Python, C, Bash, Shell%, MATLAB, 
+	\item Javascript, CSS, HTML, jQuery
+\end{rSubQualificationsSection}
+
+\begin{rSubQualificationsSection}{Personal}
+	\item Adaptable to diverse work environments including WFH
+	\item Excellent written and verbal communication, time management
+\end{rSubQualificationsSection}
+
+%\item Adaptive to different work environments including WFH \\
+%\begin{tabular}{ @{} >{}l @{\hspace{6ex}} l }
+%%Computer Languages & Java, C++, Python, C, MATLAB \\
+%%Software \& Tools & HTML, LaTeX, Excel \\
+%%Web & JavaScript, CSS3, HTML5 \\
+%%Other & MySQL, MariaDB, Oracle Service Cloud, Git, SVN
+%Microsoft Office & Word, Excel, Access \\
+%Mathematics & Algebra, geometry, calculus, statistics \\
+%Software & MatLab, LaTex \\
+%Personal & Written and verbal communication, organization, time management
+%\end{tabular}
+
+
+	\begin{rSubsection}{Projects}
+		\begin{rProject}{Infrared remote control system}
+			Designed a system for emulating a TV remote control with an Android-based application and two external devices. An Android app running on a phone communicates with a Linux-based server over WiFi via a RESTful API designed in Python. Commands are transmitted over 433MHz radio-frequency (RF) communication to a battery-powered device containing an IR receiver and emitter. Buttons on the Android app cause the corresponding IR code to be transmitted, controlling the TV. 
+		\end{rProject}
+	\end{rSubsection}
+\end{rSection}
+
+
+	
+	%----------------------------------------------------------------------------------------
+	%	EDUCATION SECTION
+	%----------------------------------------------------------------------------------------
+	
+	\begin{rSection}{Education}
+		{\bf University of Wyoming} \hfill {\em 2015} 
+		\\ Bachelor of Science in Computer Engineering
+%		\\ Relevant courses: Calculus I-III, Electronics, Technical Writing, Chemistry I, Engineering Physics I-II, Statistics
+%		\\ 
+%		\\ {\bf Green River High School} \hfill {\em 2005 - 2009} 
+%		\\ \emph{Summa Cum Laude}
+	\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+	
+	%\begin{rSubEmploymentSection}{Hexultant IT}{August 2017 - Present}{Owner}{Cheyenne, WY}
+	%	\item Something about making websites or something
+	%\end{rSubEmploymentSection}	
+		
+	\begin{rSubEmploymentSection}{Freelance Full-stack Developer}{Jan 2017 - Present}{Full-stack Developer}
+		\item Built a web store for a small business using Square checkout APIs, Heroku, Spring MVC, MongoDB, Thymeleaf, and JQuery (AJAX). Store is designed to be used on any device independent of screen resolution.
+	\end{rSubEmploymentSection}	
+		
+	\begin{rSubEmploymentSection}{Language I/O}{May 2015 - November 2016}{Software Engineer, Full-stack development}{Cheyenne, WY}
+	\item Took part in a development team building a web application used for translating text to different languages
+	\item Used technologies including MySQL, Java Enterprise Edition, JPA, JSP, Javascript, jQuery, and Glassfish server
+	%\item Worked in an Agile Development Team and used technologies such as Glassfish server, MySQL, J2EE, JPA, JSP, and JavaScript to maintain and enhance an enterprise Java application
+	\item Implemented REST APIs for connecting to Salesforce, Oracle, and translation services provided by Google, Microsoft, and others
+	\item Worked closely with clients to establish problem specifications and system designs
+%	\item Occasionally performed job duties remotely 
+	\item Performed technical support and troubleshooting with customers
+	\end{rSubEmploymentSection}
+	
+	\begin{rSubEmploymentSection}{Cheyenne Technology}{April 2013 - August 2014}{Software Development Intern (Remote)}{Cheyenne, WY}
+	\item Completed website updates (remotely) for various clients and resolved numerous problems in Java support software
+	\end{rSubEmploymentSection}
+	
+%	\begin{rSubEmploymentSection}{Ark Regional Services}{May 2012 - August 2013}{Direct Support Staff}{Laramie, WY}
+%	\item Interacted with clients at their homes during day-to-day activities and assisted along the way
+%	\item Documented all activities, including medications 
+%	%\item Practiced de-escalation skills and crisis intervention
+%	\end{rSubEmploymentSection}
+	
+%\begin{rSubEmploymentSection}{University of Wyoming}{August 2011 - May 2012}{Resident Assistant}{Laramie, WY}
+%\item Interacted with residents on a daily basis and planned occasional social events for residents
+%\item Documented important interactions with residents
+%\end{rSubEmploymentSection}
+	
+%\begin{rSubEmploymentSection}{Loaf N' Jug}{May 2009 - August 2012}{Store Associate}{Green River, WY}
+%	\item Interacted with customers in a professional and friendly manner
+%	\item Carried products in excess of 50 lbs.
+%\end{rSubEmploymentSection}
+
+\end{rSection}
+
+\end{document}
