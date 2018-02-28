@@ -31,10 +31,8 @@
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
 %----------------------------------------------------------------------------------------
-
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
-
 \def \addressSep {$\diamond$} % Set default address separator to a diamond
 
 % One, two or three address lines can be specified 
@@ -75,7 +73,6 @@
 %----------------------------------------------------------------------------------------
 %	PRINT THE HEADING LINES
 %----------------------------------------------------------------------------------------
-
 \let\ori@document=\document
 \renewcommand{\document}{
   \ori@document  % Begin document
@@ -91,8 +88,6 @@
 %----------------------------------------------------------------------------------------
 %	SECTION FORMATTING
 %----------------------------------------------------------------------------------------
-
-% Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
   \MakeUppercase{\bf #1} % Section title
@@ -109,8 +104,6 @@
 %----------------------------------------------------------------------------------------
 %	SUBSECTION FORMATTING
 %----------------------------------------------------------------------------------------
-
-% Defines the rSection environment for the large sections within the CV
 \newenvironment{rSubsection}[1]{ % 1 input argument - section name
 	{\bf #1} % Section title
 	\vspace{-0.8em}
@@ -133,7 +126,6 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
-
 \newenvironment{rSubEmploymentSection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
@@ -144,7 +136,6 @@
    \itemsep -0.8em \vspace{-0.8em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
 }
 
 \newenvironment{rSubQualificationsSection}[1]{ % 1 input argument, subsection name
@@ -153,9 +144,8 @@
 		\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
 	}{
 	\end{list}
-	\vspace{0.5em} % Some space after the list of bullet points
+%	\vspace{0.5em} % Some space after the list of bullet points
 }
-
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document
